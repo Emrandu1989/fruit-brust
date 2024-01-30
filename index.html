@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+
+    <!-- Font awesome icon link -->
+
+    <script
+      src="https://kit.fontawesome.com/caa1c3b435.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind and daisyUi cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+      body {
+        max-width: 1500px;
+        font-family: 'Lato', sans-serif;
+      }
+      .hide{
+        display: none;
+      }
+      
+      
+    </style>
+  </head>
+  <body class="mx-auto  my-5">
+    <header>
+      <nav
+        class="lg:flex justify-evenly items-center bg-[#F85559] rounded-[600px] h-[70px] lg:h-[100px] text-white"
+      >
+        <div class="hide flex gap-5 font-semibold text-lg">
+          <a class="hide lg:block" href="">Home</a>
+          <a class="hide lg:block" href="">About Us</a>
+          <a class="hide lg:block" href="">Shop</a>
+          <a class="hide lg:block" href="">All Fruits</a>
+        </div>
+        <div class=" mr-2  flex justify-evenly lg:justify-center items-center gap-3">
+          
+            <img src="./images/logo.png" alt="" />
+            <h2 class="font-bold text-3xl lg:text-4xl p">Fruit Burst</h2>
+
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+           
+         
+           
+         
+        </div>
+        <div class="hide lg:block bg-[#FFF] px-6 py-1 rounded-[50px]">
+          <input type="text" class="rounded-[50px]" placeholder="Search here" />
+          <i class="fa-solid text-black opacity-30 fa-magnifying-glass"></i>
+
+        
+        </div>
+      
+        
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
